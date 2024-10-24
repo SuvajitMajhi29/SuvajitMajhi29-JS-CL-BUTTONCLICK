@@ -59,6 +59,18 @@
         }
 
         //    start coding here
+        var button2 = document.getElementById("button2");
+
+    /* Here, we are adding a click event to button2; the custom logic will be defined in a function called "button2clicked" */
+button2.onclick = button2clicked;
+
+/* Here, we are getting the text2 HTML element as a JavaScript object */
+var text2 = document.getElementById("text2");
+
+/* Here, we are defining the click event's logic that will be performed when button2 is clicked */
+function button2clicked() {
+    text2.innerText = "button 2 clicked";
+}
 
 
         /* OPTIONAL PRACTICE: If you want more practice later, try using a button to alter text of a tag
